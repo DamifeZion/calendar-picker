@@ -104,6 +104,6 @@ npm run start
 3. Deploy to Vercel or Netlify
 
 ```bash
-npm install -g vercel
+npm install -g netlify-cli
 vercel deploy
 ```
