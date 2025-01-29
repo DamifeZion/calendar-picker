@@ -61,11 +61,11 @@ export const useDatePicker = () => {
       state.range.end = endDate;
    };
 
+   // Swap the dates if the end date is earlier than the start date
    watch(
       () => state.range.end,
       (newValue) => {
          if (moment(newValue).isBefore(moment(state.range.start))) {
-            // Swap the dates if the end date is earlier than the start date
             const temp = state.range.start;
             state.range.start = state.range.end;
             state.range.end = temp;
