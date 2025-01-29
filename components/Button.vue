@@ -46,6 +46,7 @@ const props = withDefaults(defineProps<Props>(), {
       :is="as"
       :class="
          cn(
+            'gap-2',
             buttonVariants({ variant, size }),
             typeof $attrs.class === 'string' ? $attrs.class : ''
          )
