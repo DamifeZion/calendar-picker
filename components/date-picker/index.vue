@@ -7,7 +7,7 @@ const { state, formattedDateRange, selectDate, setRange } = useDatePicker();
 </script>
 
 <template>
-   <div>
+   <div class="relative">
       <Button
          variant="outline"
          @click="state.open = !state.open"
@@ -31,6 +31,7 @@ const { state, formattedDateRange, selectDate, setRange } = useDatePicker();
          :open="state.open"
          @select="selectDate"
          @set-range="setRange"
+         class="absolute"
       />
    </div>
 </template>
