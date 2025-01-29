@@ -39,6 +39,19 @@
       @apply border-border;
    }
    body {
-      @apply bg-background text-foreground font-body min-w-[320px];
+      @apply bg-background text-foreground font-body min-w-[340px];
+   }
+   .dp__cell_inner dp__pointer dp--past dp__range_start {
+      @apply bg-primary!important;
    }
 }
+
+.dp__range_start,
+.dp__range_end {
+   background-color: hsl(262.1, 83.3%, 57.8%) !important;
+}
+
+.dp__range_between {
+   background-color: hsl(220, 14.3%, 95.9%) !important;
+}
+   

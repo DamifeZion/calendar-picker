@@ -4,7 +4,7 @@ import { fileURLToPath } from "url";
 export default defineNuxtConfig({
    compatibilityDate: "2024-11-01",
    devtools: { enabled: true },
-   css: ["@/assets/css/index.css"],
+   css: ["@/assets/css/index.css", "@vuepic/vue-datepicker/dist/main.css"],
    postcss: {
       plugins: {
          tailwindcss: {},
